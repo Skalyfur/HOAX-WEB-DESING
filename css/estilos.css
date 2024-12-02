@@ -1,0 +1,337 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@500&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #F5F5F5;
+    
+}
+
+.header-container{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 25px;
+    
+}
+
+
+.logo{
+    font-size: 2.5rem;
+}
+
+.logo a{
+    color: #000;
+}
+
+.logo span{
+    color: #8C8C8C;
+}
+
+nav{
+   
+    padding-right: 25px;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+nav ul li{
+    padding: 0 20px 0 ;
+}
+
+nav ul li a{
+    color: #909090;
+    transition: .2s ease;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: #000;
+}
+
+.social-media{
+    padding-left: 20px;
+}
+
+.social-media i{
+    padding: 5px;
+    color: #000;
+}
+
+
+/* ====== PORTADA ======== */
+
+.portada{
+    width: 100%;
+    height: 90vh;
+    background-image: url("../img/portada_img/montañas\ y\ neblina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.portada-container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+}
+
+
+.portada-text{
+    padding-top: 10rem;
+}    
+
+.portada-text h1{
+    font-size: 3rem;    
+    color: #000;
+}
+
+.portada-text h2{
+    font-size: 4.5rem;
+    margin-top: -20px;
+}
+
+.portada-text span{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,21,28,1) 50%, rgba(140,140,140,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+
+.boton-portada button{
+    width: 150px;
+    margin-top: 30px;
+    border: 1px solid #000 ;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+
+.boton-portada button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* Seccion Trabajos */
+
+.trabajos-container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.trabajos-titulo{
+    margin-top: 85px;
+
+}
+
+
+.trabajos-links-botones{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.trabajos-links-botones button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: .2s ease;
+}
+
+
+.trabajos-links-botones button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.trabajos-collage-imagenes{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: .3em;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+.trabajos-collage-imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imagen_item{
+    position: relative;
+}
+
+
+.imagen_item:nth-child(3){
+    grid-column-start: span 4;
+}
+
+
+.imagen_item:nth-child(3){
+    grid-column-start: span 4;
+}
+
+
+.imagen_item:nth-child(2){
+    grid-row-start: span 2;
+}
+
+.imagen_item:nth-child(5){
+    grid-column-start: span 2;
+}
+
+.imagen_item:nth-child(6){
+    grid-column-start: span 2;
+}
+
+
+.trabajos-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 85px;
+}
+
+.trabajos-contacto h2{
+    font-size: 1.5rem;
+}
+
+
+.trabajos-contacto p{
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.trabajos-contacto button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: .2s ease;
+}
+
+
+.trabajos-contacto button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* FOOTER */
+
+.footer-container{
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.logo-footer{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.logo-footer h1{
+    font-size: 2.5rem;
+    border: 1px solid #8C8C8C;
+    padding: 5px;
+}
+
+.logo-footer span{
+    color: #909090;
+}
+
+.logo-footer p{
+    margin-top: 5px;
+    color: #8C8C8C;
+}
+
+
+.social-media-footer{
+    margin: 20px;
+    
+}
+
+.social-media-footer a{
+    position: relative;
+    margin: 20px;
+    color: #8C8C8C;
+    transition: transform 0.5s ease; /* Agrega una transición para suavizar el movimiento */
+}
+
+
+
+.social-media-footer a:active {
+  transform: translate(50px, 50px);
+}
+
+
+.derechos-reservados{
+    margin: 35px;
+}
+
+
+.derechos-reservados p{
+    color: #8C8C8C;
+}
+
+
+
+
+/* Media querys */
+
+@media screen {
+    
+}
